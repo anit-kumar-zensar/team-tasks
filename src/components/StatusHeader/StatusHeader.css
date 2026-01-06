@@ -1,0 +1,14 @@
+.status-container {
+  height: 400px;
+  width: 500px;
+  border-radius: 1%;
+}
+.backlog {
+  border: 2px solid aqua;
+}
+.in-progress {
+  border: 2px solid lightgreen;
+}
+.done {
+  border: 2px solid green;
+}
