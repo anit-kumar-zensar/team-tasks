@@ -2,19 +2,27 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./StatusHeader.css";
+import TasksCard from "../TasksCard";
 
-const StatusHeader = () => {
+const StatusHeader = ({ data }) => {
+  console.log("sdfsdf", data);
   return (
-    <>
-      <h1>Status Component</h1>
-      <Container>
-        <Row>
-          <Col className="status-container backlog">Backlog</Col>
-          <Col className="status-container in-progress">In Progress</Col>
-          <Col className="status-container done">Done</Col>
-        </Row>
-      </Container>
-    </>
+    <Container>
+      <Row>
+        {Object.entries(data).map(([key, section]) => {
+          return (
+            <Col className={`status-container ${key}`} key={key}>
+              <h4 className="h4">{section?.displayName}</h4>
+              {section?.tasks?.map((task) => (
+                <div key={task.id}>
+                  <TasksCard task={task} />
+                </div>
+              ))}
+            </Col>
+          );
+        })}
+      </Row>
+    </Container>
   );
 };
 

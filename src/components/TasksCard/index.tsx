@@ -2,25 +2,16 @@ import MoveBackward from "../Buttons/MoveBackward";
 import Assignees from "../Assignee";
 import MoveForward from "../Buttons/MoveForward";
 
-const TasksCard = () => {
+const TasksCard = ({ task }) => {
   return (
-    <div className="tasks-container">
-      <div className="content">
-        <h1 className="title">Tasks card component</h1>
-        <p className="description">
-          It will combine title, description, assignee component,buttons
-          together
-        </p>
-        <div className="footer">
-          <div>
-            <MoveBackward />
-          </div>
-          <div>
-            <Assignees />
-          </div>
-          <div>
-            <MoveForward />
-          </div>
+    <div className="card text-bg-dark mb-3" style={{ maxWidth: "18rem" }}>
+      <div className="card-body">
+        <h5 className="card-title">{task?.title}</h5>
+        <p className="card-text text-truncate">{task?.description}</p>
+        <div className="d-flex justify-content-around">
+          <MoveBackward />
+          <Assignees />
+          <MoveForward />
         </div>
       </div>
     </div>

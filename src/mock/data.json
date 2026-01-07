@@ -1,0 +1,47 @@
+{
+  "backlog": {
+    "displayName": "Backlog",
+    "tasks": [
+      {
+        "id": "backlog1",
+        "title": "Project planning",
+        "description": "Loream project planning.This text is quite long, and will be truncated once displayed.This text is quite long, and will be truncated once displayed."
+      },
+      {
+        "id": "backlog2",
+        "title": "Project planning 2",
+        "description": "Loream project planning...2 This text is quite long, and will be truncated once displayed."
+      }
+    ]
+  },
+  "in-progress": {
+    "displayName": "In Progress",
+    "tasks": [
+      {
+        "id": "in-progress1",
+        "title": "Project progress ",
+        "description": "Loream project progress..."
+      },
+      {
+        "id": "in-progress2",
+        "title": "Project progress 2",
+        "description": "Loream project progress...2"
+      },
+      {
+        "id": "in-progress3",
+        "title": "Project progress 3",
+        "description": "Loream project progress...3"
+      }
+    ]
+  },
+  "done": {
+    "displayName": "Done",
+    "tasks": [
+      {
+        "id": "done1",
+        "title": "Project done ",
+        "description": "Loream project done..."
+      }
+    ]
+  }
+}
